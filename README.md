@@ -53,3 +53,7 @@ To build both JARs (thin and standalone):
 ```
 
 The built JARs will be placed under ``build/libs``.
+
+## Dockerized execution example
+
+``docker run -it --rm -p 8080:8080 wiremock-hello --verbose --extensions com.github.tomakehurst.wiremock.extension.webhooks.Webhooks --global-response-templating``
